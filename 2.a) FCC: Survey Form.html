@@ -1,0 +1,328 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<html>
+  <body>
+    <main>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">ONLINE LEARNING PLATFORM SURVEY FORM</h1>
+    <p id="description" class="description text-centre">
+Let's check how Benefited are the Young Tech minds that explored various stuffs! 
+    </p>
+  </header>
+</div>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Go with your name"
+        required
+      >
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Drop your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="15"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Hey what do you do currently?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>choose it</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="Extremelearner">Masters</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend your friend self-learning?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+Choose your favourite online learning platforms. Cheers!
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label
+        ><input
+          name="prefer"
+          value="Udemy"
+          type="checkbox"
+          class="input-checkbox"
+        />Udemy</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Udacity"
+          type="checkbox"
+          class="input-checkbox"
+        />Udacity</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="LinkedIn Learning(Lynda)"
+          type="checkbox"
+          class="input-checkbox"
+        />LinkedIn Learning(Lynda)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Coursera"
+          type="checkbox"
+          class="input-checkbox"
+        />Coursera</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="edX and Open edX"
+          type="checkbox"
+          class="input-checkbox"
+        />edX and Open edX</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="FreecodeCamp"
+          type="checkbox"
+          class="input-checkbox"
+        />FreecodeCamp</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Sololearn"
+          type="checkbox"
+          class="input-checkbox"
+        />Sololearn</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Codecacademy"
+          type="checkbox"
+          class="input-checkbox"
+        />Codecacademy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="W3schools"
+          type="checkbox"
+          class="input-checkbox"
+        />W3schools</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="khanAcademy"
+          type="checkbox"
+          class="input-checkbox"
+        />khanAcademy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="AlisonCourses"
+          type="checkbox"
+          class="input-checkbox"
+        />AlisonCourses</label
+      >
+       <label
+        ><input
+          name="prefer"
+          value="FutureLearn"
+          type="checkbox"
+          class="input-checkbox"
+        />FutureLearn</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Skillshare"
+          type="checkbox"
+          class="input-checkbox"
+        />Skillshare</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="NPTEL"
+          type="checkbox"
+          class="input-checkbox"
+        />NPTEL</label
+      >
+    </div>
+    <div class="form-group">
+      <p>
+Go ahead and select the online coding Platforms you are comfortable with ! Happy coding!!!
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label
+        ><input
+          name="prefer"
+          value="Hackerrank"
+          type="checkbox"
+          class="input-checkbox"
+        />Hackerrank</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Hackerearth"
+          type="checkbox"
+          class="input-checkbox"
+        />Hackerearth</label
+      >
+<label
+        ><input
+          name="prefer"
+          value="Codechef"
+          type="checkbox"
+          class="input-checkbox"
+        />Codechef</label
+      >
+<label
+        ><input
+          name="prefer"
+          value="TopCoder"
+          type="checkbox"
+          class="input-checkbox"
+        />TopCoder</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Coderbyte"
+          type="checkbox"
+          class="input-checkbox"
+        />Coderbyte</label
+      >
+<label
+        ><input
+          name="prefer"
+          value="Codewars"
+          type="checkbox"
+          class="input-checkbox"
+        />Codewars</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Leetcode"
+          type="checkbox"
+          class="input-checkbox"
+        />Leetcode</label
+      >
+<label
+        ><input
+          name="prefer"
+          value="Codeforces"
+          type="checkbox"
+          class="input-checkbox"
+        />Codeforces</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Codingninjas"
+          type="checkbox"
+          class="input-checkbox"
+        />Codingninjas</label
+      >
+<label
+        ><input
+          name="prefer"
+          value="CodinGame"
+          type="checkbox"
+          class="input-checkbox"
+        />CodinGame</label
+      >
+    </div>
+    <div class="form-group">
+      <p>Kindly Suggest the platforms that you feel comfortable with:</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Drop your comment  here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+      </form>
+        <footer class="clue">
+            <p>© Copyright 2021 online learning platform- All Rights Reserved</p>
+        </footer> 
+    </main>
+</body>
+</html>
+ 
